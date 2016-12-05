@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="ContactList.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ContactList"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" Padding="10">
+            <TextBox x:Name="bxFirstName" PlaceholderText="First Name" Header="First Name" />
+            <TextBox x:Name="bxLastName" PlaceholderText="Last Name" Header="Last Name" Margin="0,10,0,0" />
+            <TextBox x:Name="bxAge" PlaceholderText="Age" Margin="0,10,0,0" Header="Age"  InputScope="Number"/>
+            <TextBox x:Name="bxEmail" PlaceholderText="Email" Margin="0,10,0,0" Header="Email" />
+            <Button x:Name="btnSave" Content="Save" Margin="0,10,10,0" HorizontalAlignment="Right" Click="btnSave_Click" Background="{ThemeResource InkToolbarAccentColorThemeBrush}"  Foreground="White" />
+            <ListView x:Name="listContacts" Margin="0 , 5" />
+        </StackPanel>
+    </Grid>
+</Page>
